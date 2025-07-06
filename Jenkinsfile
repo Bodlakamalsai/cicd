@@ -7,11 +7,11 @@ pipeline {
     }
 
     stages {
-        stage('Clone Repo') {
-            steps {
-                git url: 'https://github.com/Bodlakamalsai/cicd.git', credentialsId: 'github-token'
-            }
-        }
+        // stage('Clone Repo') {
+        //     steps {
+        //         git url: 'https://github.com/Bodlakamalsai/cicd.git', credentialsId: 'github-token'
+        //     }
+        // }
 
         stage('Terraform Init') {
             steps {
