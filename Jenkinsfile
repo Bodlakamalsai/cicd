@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Clone Repo') {
             steps {
-                git url: 'https://github.com/Bodlakamalsai/cicd.git', credentialsId: 'your-git-cred-id'
+                git url: 'https://github.com/Bodlakamalsai/cicd.git', credentialsId: 'github-token'
             }
         }
 
